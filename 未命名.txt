@@ -1,0 +1,69 @@
+smb://10.130.26.130
+
+you-get -p mpv 'http://weibo.com/tv/v/EoGekESWs?fid=1034:ba503666349d492ef8739ef0d49dd7bf'
+
+
+you-get -o /Users/huangyong/Downloads
+
+you-get -i 'http://v.youku.com/v_show/id_XMTg1MjAxNDU2NA==.html?spm=a2htc.20010183.m_89963.5~5!2~5~5~5~5!2~5~5!2~A&from=y1.3-tech-index3-232-10183.89969-89963.2-1'
+
+Macbook teamviewer 个人密码 123456
+
+用GitHub专门来管理程序，不然时不时的生成可执行文件，坚果云的空间早就不够用了。
+
+ffmpeg -i input.avi -b:a 128k output.mp3
+看是不是很简单，相信聪明的你能够一眼看出这句命令的意思. -i 就是指定后面的文件为视频的源文件（input.avi）； -b:a 128k 是指输出的音频的码率（如果你嫌文件大可以设置为64k,据我的经验，对于英语听力完全无影响）；最后就是输出的文件名（output.mp3）
+
+$ ffmpeg -i a.mov -ss 00:00:21 -t 00:00:10 -acodec aac -vcodec h264 -strict -2 out.mp4
+其中 -ss 00:00:21 表示开始剪辑的位置（时间点），-t 00:00:10 表示剪辑的长度，即 10 秒钟。
+
+$ open /Applications/Safari.app/
+如果open一个文件，则会使用关联的程序打开之。例如open screenshot.png会在Preview中查看图片。
+
+可以使用-a选项要求自行选择打开的程序，或使用-e强制在TextEdit中编辑此文件。
+
+open一个目录会在Finder窗口中打开此目录。一个很有用的技巧是open .打开当前目录。
+
+也可以通过Homebrew做有趣的事情：brew install archey会安装Archey（在启动命令行时显示苹果LOGO和计算机硬件参数的小工具）。
+
+identify
+使用该命令即可查看图片详情。
+
+例如：
+
+
+1
+identify example.png
+
+Vim有三种模式：
+导航(navigation)模式。 这时候，字母就是上下左右键。
+输入模式。这时候，你按字母键，才会输入字母。
+命令模式。需要先输入":" 冒号，才会进入。例如，你输入 :ls , 就相当于运行了 ls 命令。
+
+
+搜索 some_thing: /some_thing
+先 shift + v 选中若干行
+从导航模式到编辑模式，有下面几种方法:
+在光标前输入： i ( insert )
+在光标后输入： a (append / after )
+在光标下行增加内容： o
+
+:new 文件名.后缀    新建文件。
+:e 文件名    打开文件。
+:w 文件名.txt 　保存文件。
+:wq    保存并退出。
+:x    退出，如果文件更改则保存。
+
+以下删除都以当前光标作为起始位置。
+删掉一个字母：x
+删掉一个单词： dw
+删掉一行： dd
+
+复制，或者删除（vim认为删除就是剪切，所有被删掉的内容，都会被放到复制缓冲区中）后，就可以粘贴了。
+复制一个单词： yw
+复制当前行： yy
+粘贴: p
+
+# _*_ encoding : utf-8 _*_
+
+
